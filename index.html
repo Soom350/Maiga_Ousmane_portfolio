@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">Maiga • Étudiant Malien au Japon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">M_O<span>.</span>DEV</a>
+    <ul class="nav-links">
+      <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+      <li><a href="#blog" data-i18n="nav.blog">Blog</a></li>
+      <li><a href="#japan" data-i18n="nav.japan">Vie au Japon</a></li>
+      <li><a href="#resources" data-i18n="nav.resources">Ressources</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      <li class="nav-lang">
+        <select class="language" name="language" aria-label="Langue du site">
+          <option value="fr" class="lang-option">Français</option>
+          <option value="en" class="lang-option">English</option>
+          <option value="ja" class="lang-option">日本語</option>
+        </select>
+      </li>
+    </ul>
+    <div class="nav-flag">
+      <!-- <span class="flag"><div class="mali-flag-mini"></div></span> MALI
+      <span style="margin: 0 6px; opacity:0.3">x</span>
+      <span class="flag"><div class="japan-flag-mini"></div></span> JAPAN -->
+      <div class="mali-flag-mini"><span></span><span></span><span></span></div>
+      <span style="font-size:0.78rem;color:var(--muted)">x</span>
+      <div class="jp-flag-mini">
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="jp-deco">日本</div>
+
+    <div class="hero-left">
+      <div class="hero-tag" data-i18n="hero.tag">Disponible pour collaborations</div>
+      <h1 class="hero-name">Maiga<br>Ousmane</h1>
+      <p class="hero-name-jp">マイガ・ウスマン</p>
+      <p class="hero-desc" data-i18n-html="hero.desc">
+        Étudiant malien au Japon, passionné par la <strong>tech</strong>, l'<strong>IA</strong> et la création de projets utiles pour les étrangers vivant au Japon. Futur ingénieur en <strong>cybersécurité</strong>.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary" data-i18n="hero.cta1">Mes projets</a>
+        <a href="#blog" class="btn-secondary" data-i18n="hero.cta2">Lire le blog</a>
+      </div>
+      <div class="hero-socials">
+        <a href="#" class="social-link">GitHub</a>
+        <a href="#" class="social-link">YouTube</a>
+        <a href="#" class="social-link">LinkedIn</a>
+        <a href="#" class="social-link">TikTok</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="photo-frame">
+                <div class="photo-placeholder">
+          <img src="image/premiere_image.jpg" alt="Maiga Ousmane" data-i18n-alt="hero.img_alt" width="340" height="420" loading="eager" decoding="async">
+        </div>
+        <div class="mali-stripe">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat reveal">
+      <span class="stat-num">2+</span>
+      <span class="stat-label" data-i18n="stat.l1">Ans au Japon</span>
+    </div>
+    <div class="stat reveal">
+      <span class="stat-num">6+</span>
+      <span class="stat-label" data-i18n="stat.l2">Projets actifs</span>
+    </div>
+    <div class="stat reveal">
+      <span class="stat-num">8+</span>
+      <span class="stat-label" data-i18n="stat.l3">Technologies</span>
+    </div>
+    <div class="stat reveal">
+      <span class="stat-num">∞</span>
+      <span class="stat-label" data-i18n="stat.l4">Ambition</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div>
+      <div class="section-label" data-i18n="about.label">À propos</div>
+      <h2 class="section-title reveal" data-i18n-html="about.title_html">Développeur.<br>Étudiant.<br>Créateur.</h2>
+      <p class="section-sub reveal" data-i18n="about.sub">
+        Venu du Mali pour étudier la cybersécurité au Japon, je construis des plateformes qui simplifient la vie des étrangers. Je partage mon parcours avec authenticité.
+      </p>
+
+      <div class="about-skills reveal">
+        <div class="skill-chip">
+          <span class="dot"></span><span data-i18n="skill.php">PHP / MySQL</span>
+        </div>
+        <div class="skill-chip">
+          <span class="dot"></span><span data-i18n="skill.fb">Firebase</span>
+        </div>
+        <div class="skill-chip sec">
+          <span class="dot"></span><span data-i18n="skill.cyber">Cybersécurité</span>
+        </div>
+        <div class="skill-chip sec">
+          <span class="dot"></span><span data-i18n="skill.linux">Linux / Serveurs</span>
+        </div>
+        <div class="skill-chip sys">
+          <span class="dot"></span><span data-i18n="skill.aws">AWS</span>
+        </div>
+        <div class="skill-chip sys">
+          <span class="dot"></span><span data-i18n="skill.iml">IA / ML</span>
+        </div>
+        <div class="skill-chip">
+          <span class="dot"></span><span data-i18n="skill.web">HTML / CSS / JS</span>
+        </div>
+        <div class="skill-chip sys">
+          <span class="dot"></span><span data-i18n="skill.rest">API REST</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-right reveal">
+      <div class="section-label" data-i18n="about.path_label">Parcours</div>
+      <div class="timeline-item">
+        <div class="timeline-year" data-i18n="about.t1.year">Mali</div>
+        <div class="timeline-content">
+          <h4><span data-i18n-html="about.t1.h_html">Les bases <i class="fas fa-globe"></i></span></h4>
+          <p data-i18n="about.t1.p">Première passion pour la tech, apprentissage autodidacte du développement web.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year" data-i18n="about.t2.year">Arrivée</div>
+        <div class="timeline-content">
+          <h4 data-i18n="about.t2.h">Premier jour au Japon 🇯🇵</h4>
+          <p data-i18n="about.t2.p">Choc culturel, langue inconnue, nouvelle vie. Le début d'une grande aventure.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year" data-i18n="about.t3.year">École</div>
+        <div class="timeline-content">
+          <h4><span data-i18n-html="about.t3.h_html">Sécurité informatique <i class="fas fa-shield-alt"></i></span></h4>
+          <p data-i18n="about.t3.p">Formation intensive en cybersécurité, réseaux, Linux et cloud AWS.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year" data-i18n="about.t4.year">2025+</div>
+        <div class="timeline-content">
+          <h4><span data-i18n-html="about.t4.h_html">Projets & contenu <i class="fas fa-rocket"></i></span></h4>
+          <p data-i18n="about.t4.p">Lancement de plateformes, création de contenu, construction de ma présence en ligne.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label" data-i18n="proj.label">Projets</div>
+    <h2 class="section-title reveal" data-i18n="proj.title">Ce que je construis</h2>
+    <p class="section-sub reveal" data-i18n="proj.sub">Des projets réels, avec de vraies technologies, pour de vrais besoins.</p>
+
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <span class="project-num">001</span>
+        <h3 class="project-title" data-i18n="p1.title">Plateforme Étrangers au Japon</h3>
+        <p class="project-desc" data-i18n="p1.desc">Un hub centralisé pour aider les étrangers à naviguer la vie au Japon : logement, administration, travail, langue.</p>
+        <div class="project-tags">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Firebase</span>
+        </div>
+        <div class="project-status" data-i18n="p1.status">En développement</div>
+      </div>
+
+      <div class="project-card reveal">
+        <span class="project-num">002</span>
+        <h3 class="project-title" data-i18n="p2.title">Système de Gestion Scolaire</h3>
+        <p class="project-desc" data-i18n="p2.desc">Application complète pour gérer élèves, notes, emplois du temps et communications pour établissements éducatifs.</p>
+        <div class="project-tags">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">JS</span>
+        </div>
+        <div class="project-status" data-i18n="p2.status">Beta</div>
+      </div>
+
+      <div class="project-card reveal">
+        <span class="project-num">003</span>
+        <h3 class="project-title" data-i18n="p3.title">Blog Interactif</h3>
+        <p class="project-desc" data-i18n="p3.desc">Plateforme de blog avec commentaires, profils utilisateurs et système de likes. Communauté intégrée.</p>
+        <div class="project-tags">
+          <span class="tag">Firebase</span>
+          <span class="tag">JS</span>
+          <span class="tag">CSS</span>
+        </div>
+        <div class="project-status" data-i18n="p3.status">Actif</div>
+      </div>
+
+      <div class="project-card reveal">
+        <span class="project-num">004</span>
+        <h3 class="project-title" data-i18n="p4.title">App Étudiante</h3>
+        <p class="project-desc" data-i18n="p4.desc">Outil pour étudiants étrangers au Japon : budget, cours, rappels, agenda et ressources utiles.</p>
+        <div class="project-tags">
+          <span class="tag">Firebase</span>
+          <span class="tag">PWA</span>
+        </div>
+        <div class="project-status coming" data-i18n="p4.status">Bientôt</div>
+      </div>
+
+      <div class="project-card reveal">
+        <span class="project-num">005</span>
+        <h3 class="project-title" data-i18n="p5.title">Projets IA</h3>
+        <p class="project-desc" data-i18n="p5.desc">Expérimentations avec des modèles d'IA locaux, serveur IA maison, et automatisations intelligentes.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Linux</span>
+          <span class="tag">API</span>
+        </div>
+        <div class="project-status coming" data-i18n="p5.status">En cours</div>
+      </div>
+
+      <div class="project-card reveal">
+        <span class="project-num">006</span>
+        <h3 class="project-title" data-i18n="p6.title">Système API REST</h3>
+        <p class="project-desc" data-i18n="p6.desc">API modulaire en PHP et MySQL pour alimenter plusieurs projets depuis un seul backend unifié.</p>
+        <div class="project-tags">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">REST</span>
+        </div>
+        <div class="project-status" data-i18n="p6.status">Actif</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog">
+    <div class="section-label" data-i18n="blog.label">Blog</div>
+    <h2 class="section-title reveal" data-i18n-html="blog.title_html">Ma vie au Japon,<br>sans filtre</h2>
+    <p class="section-sub reveal" data-i18n="blog.sub">Articles authentiques sur l'expérience réelle d'un étudiant africain au Japon.</p>
+
+    <div class="blog-grid">
+      <div class="blog-card featured reveal">
+        <div class="blog-cat" data-i18n-html="b1.cat_html"><i class="fas fa-globe"></i> Vie au Japon</div>
+        <h3 class="blog-title" data-i18n="b1.title">Mon arrivée au Japon : entre rêve et réalité</h3>
+        <p class="blog-excerpt" data-i18n="b1.excerpt">Ce que personne ne t'a dit avant de venir. Le premier mois au Japon, le choc culturel, la langue, la solitude et les premières victoires. Mon témoignage complet...</p>
+        <div class="blog-meta">
+          <span><i class="fas fa-clock"></i> <span data-i18n="b1.time">8 min</span></span>
+          <span data-i18n="b1.pin">Épinglé</span>
+        </div>
+      </div>
+
+      <div class="blog-card reveal">
+        <div class="blog-cat" data-i18n-html="b2.cat_html"><i class="fas fa-coins"></i> Budget</div>
+        <h3 class="blog-title" data-i18n="b2.title">Combien coûte vraiment la vie étudiante au Japon ?</h3>
+        <p class="blog-excerpt" data-i18n="b2.excerpt">Loyer, nourriture, transport, loisirs. Chiffres réels d'un étudiant.</p>
+        <div class="blog-meta"><span><i class="fas fa-clock"></i> <span data-i18n="b2.time">5 min</span></span></div>
+      </div>
+
+      <div class="blog-card reveal">
+        <div class="blog-cat" data-i18n-html="b3.cat_html"><i class="fas fa-briefcase"></i> Travail</div>
+        <h3 class="blog-title" data-i18n="b3.title">Comment trouver un baito (emploi étudiant) au Japon</h3>
+        <p class="blog-excerpt" data-i18n="b3.excerpt">Conseils pratiques, sites à connaître, et erreurs à éviter.</p>
+        <div class="blog-meta"><span><i class="fas fa-clock"></i> <span data-i18n="b3.time">6 min</span></span></div>
+      </div>
+
+      <div class="blog-card reveal">
+        <div class="blog-cat" data-i18n-html="b4.cat_html"><i class="fas fa-language"></i> Langue</div>
+        <h3 class="blog-title" data-i18n="b4.title">Comment j'améliore mon japonais chaque jour</h3>
+        <p class="blog-excerpt" data-i18n="b4.excerpt">Méthodes concrètes, apps, astuces d'immersion en dehors de l'école.</p>
+        <div class="blog-meta"><span><i class="fas fa-clock"></i> <span data-i18n="b4.time">4 min</span></span></div>
+      </div>
+
+      <div class="blog-card reveal">
+        <div class="blog-cat" data-i18n-html="b5.cat_html"><i class="fas fa-city"></i> Voyage</div>
+        <h3 class="blog-title" data-i18n="b5.title">Osaka vs Tokyo : différences d'un étudiant</h3>
+        <p class="blog-excerpt" data-i18n="b5.excerpt">Culture, prix, ambiance, gens. Mon avis honnête des deux villes.</p>
+        <div class="blog-meta"><span><i class="fas fa-clock"></i> <span data-i18n="b5.time">5 min</span></span></div>
+      </div>
+
+      <div class="blog-card reveal">
+        <div class="blog-cat" data-i18n-html="b6.cat_html"><i class="fas fa-exclamation-triangle"></i> Erreurs</div>
+        <h3 class="blog-title" data-i18n="b6.title">Les erreurs que j'ai faites à mon arrivée</h3>
+        <p class="blog-excerpt" data-i18n="b6.excerpt">Pour que tu ne répètes pas les mêmes. Honnêteté totale.</p>
+        <div class="blog-meta"><span><i class="fas fa-clock"></i> <span data-i18n="b6.time">7 min</span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JAPAN LIFE -->
+  <section id="japan">
+    <div class="japan-bg-text">日本生活</div>
+    <div class="section-label" data-i18n="japan.label">Vie au Japon</div>
+    <h2 class="section-title reveal" data-i18n-html="japan.title_html">Guide pour<br>étrangers</h2>
+    <p class="section-sub reveal" data-i18n="japan.sub">Tout ce qu'on ne t'explique pas dans les guides touristiques.</p>
+
+    <div class="japan-grid">
+      <div class="japan-card reveal">
+        <div class="japan-icon"><i class="fas fa-passport"></i></div>
+        <h4 data-i18n="j1.h">Visa & Administration</h4>
+        <p data-i18n="j1.p">Procédures, renouvellement, paperasse japonaise expliquée simplement.</p>
+      </div>
+      <div class="japan-card reveal">
+        <div class="japan-icon"><i class="fas fa-home"></i></div>
+        <h4 data-i18n="j2.h">Logement</h4>
+        <p data-i18n="j2.p">Trouver un appartement sans garant japonais, résidences étudiantes, coût réel.</p>
+      </div>
+      <div class="japan-card reveal">
+        <div class="japan-icon"><i class="fas fa-yen-sign"></i></div>
+        <h4 data-i18n="j3.h">Budget étudiant</h4>
+        <p data-i18n="j3.p">Survivre avec un petit budget : supermarchés, apps, astuces concrètes.</p>
+      </div>
+      <div class="japan-card reveal">
+        <div class="japan-icon"><i class="fas fa-train"></i></div>
+        <h4 data-i18n="j4.h">Transports</h4>
+        <p data-i18n="j4.p">IC Card, trains, bus, vélo. Se déplacer efficacement et pas cher.</p>
+      </div>
+      <div class="japan-card reveal">
+        <div class="japan-icon"><i class="fas fa-building"></i></div>
+        <h4 data-i18n="j5.h">Langue japonaise</h4>
+        <p data-i18n="j5.p">Ressources, méthodes, niveau requis selon les contextes du quotidien.</p>
+      </div>
+      <div class="japan-card reveal">
+        <div class="japan-icon"><i class="fas fa-heartbeat"></i></div>
+        <h4 data-i18n="j6.h">Santé & Assurance</h4>
+        <p data-i18n="j6.p">Assurance étudiante, trouver un médecin, urgences au Japon.</p>
+      </div>
+      <div class="japan-card reveal">
+        <div class="japan-icon"><i class="fas fa-globe"></i></div>
+        <h4 data-i18n="j7.h">Internet & Téléphone</h4>
+        <p data-i18n="j7.p">Meilleures offres SIM, WiFi pocket, abonnements pour étudiants.</p>
+      </div>
+      <div class="japan-card reveal">
+        <div class="japan-icon"><i class="fas fa-handshake"></i></div>
+        <h4 data-i18n="j8.h">Culture & Intégration</h4>
+        <p data-i18n="j8.p">Codes sociaux, chocs culturels courants, conseils pour s'intégrer.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT CREATION -->
+  <section id="content">
+    <div class="section-label" data-i18n="content.label">Création de contenu</div>
+    <h2 class="section-title reveal" data-i18n-html="content.title_html">Je partage,<br>tu avances</h2>
+    <p class="section-sub reveal" data-i18n="content.sub">Des contenus authentiques sur la tech, la vie au Japon et l'entrepreneuriat étudiant.</p>
+
+    <div class="content-platforms">
+      <div class="platform-card reveal">
+        <div class="platform-icon"><i class="fab fa-youtube"></i></div>
+        <div class="platform-name">YouTube</div>
+        <div class="platform-desc" data-i18n="plat.yt.desc">Vlogs, tutoriels tech, vie quotidienne au Japon.</div>
+        <div class="platform-soon" data-i18n="plat.yt.status">Bientôt</div>
+      </div>
+      <div class="platform-card reveal">
+        <div class="platform-icon"><i class="fab fa-tiktok"></i></div>
+        <div class="platform-name">TikTok</div>
+        <div class="platform-desc" data-i18n="plat.tt.desc">Shorts, conseils rapides, moments authentiques.</div>
+        <div class="platform-soon" data-i18n="plat.tt.status">Bientôt</div>
+      </div>
+      <div class="platform-card reveal">
+        <div class="platform-icon"><i class="fab fa-linkedin"></i></div>
+        <div class="platform-name">LinkedIn</div>
+        <div class="platform-desc" data-i18n="plat.li.desc">Parcours, projets, networking tech et cybersécurité.</div>
+        <div class="platform-soon" data-i18n="plat.li.status">Actif</div>
+      </div>
+      <div class="platform-card reveal">
+        <div class="platform-icon"><i class="fab fa-github"></i></div>
+        <div class="platform-name">GitHub</div>
+        <div class="platform-desc" data-i18n="plat.gh.desc">Code source, projets open-source, contributions.</div>
+        <div class="platform-soon" data-i18n="plat.gh.status">Actif</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES -->
+  <section id="resources">
+    <div class="section-label" data-i18n="res.label">Ressources</div>
+    <h2 class="section-title reveal" data-i18n-html="res.title_html">Outils & liens<br>utiles</h2>
+    <p class="section-sub reveal" data-i18n="res.sub">Une sélection de ressources que j'utilise personnellement.</p>
+
+    <div class="resources-grid">
+      <div class="resource-group reveal">
+        <h4 data-i18n-html="res.g1.h_html"><i class="fas fa-language"></i> Apprendre le japonais</h4>
+        <ul class="resource-list">
+          <li data-i18n="res.g1.i1">Anki — Flashcards kanji/vocabulaire</li>
+          <li data-i18n="res.g1.i2">Duolingo — Débutant</li>
+          <li data-i18n="res.g1.i3">Wanikani — Kanji systématique</li>
+          <li data-i18n="res.g1.i4">NHK Web Easy — Actualités en japonais simple</li>
+          <li data-i18n="res.g1.i5">HelloTalk — Échange linguistique</li>
+        </ul>
+      </div>
+      <div class="resource-group reveal">
+        <h4 data-i18n-html="res.g2.h_html"><i class="fas fa-robot"></i> Outils IA</h4>
+        <ul class="resource-list">
+          <li data-i18n="res.g2.i1">Claude — Assistant IA avancé</li>
+          <li data-i18n="res.g2.i2">ChatGPT — Brainstorming & rédaction</li>
+          <li data-i18n="res.g2.i3">Perplexity — Recherche web IA</li>
+          <li data-i18n="res.g2.i4">Midjourney — Génération d'images</li>
+          <li data-i18n="res.g2.i5">GitHub Copilot — Aide au code</li>
+        </ul>
+      </div>
+      <div class="resource-group reveal">
+        <h4 data-i18n-html="res.g3.h_html"><i class="fas fa-laptop-code"></i> Développeurs</h4>
+        <ul class="resource-list">
+          <li data-i18n="res.g3.i1">MDN Web Docs — Référence web</li>
+          <li data-i18n="res.g3.i2">PHP.net — Documentation PHP officielle</li>
+          <li data-i18n="res.g3.i3">Firebase Docs — Backend Google</li>
+          <li data-i18n="res.g3.i4">AWS Free Tier — Cloud gratuit</li>
+          <li data-i18n="res.g3.i5">Linux Journey — Apprendre Linux</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-bg"></div>
+    <div class="section-label" data-i18n="contact.label">Contact</div>
+    <h2 class="section-title" style="position:relative;z-index:2;" data-i18n-html="contact.title_html">Travaillons<br>ensemble</h2>
+    <a href="mailto:maigaousmane0303@email.com" class="contact-email">maigaousmane0303@email.com</a>
+    <p style="color:var(--muted);font-size:0.9rem;position:relative;z-index:2;" data-i18n="contact.blurb">
+      Ouvert aux collaborations, stages, projets tech et partages d'expérience.
+    </p>
+    <div class="contact-socials">
+      <a href="#" class="contact-social">GitHub</a>
+      <a href="#" class="contact-social">LinkedIn</a>
+      <a href="#" class="contact-social">YouTube</a>
+      <a href="#" class="contact-social">TikTok</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p data-i18n-html="footer.line">© 2026 Maiga Ousmane — Conçu & développé par moi-même <i class="fas fa-wrench"></i></p>
+    <div class="footer-flag">
+      <div class="mali-flag-mini"><span></span><span></span><span></span></div>
+      <span style="font-size:0.78rem;color:var(--muted)">x</span>
+      <div class="jp-flag-mini"></div>
+    </div>
+  </footer>
+</body>
+<script src="js/i18n.js"></script>
+<script src="js/index.js"></script>
+</html>
