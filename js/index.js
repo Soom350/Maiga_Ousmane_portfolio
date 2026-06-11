@@ -43,7 +43,7 @@
     });
 
     // Stagger siblings
-    document.querySelectorAll('.projects-grid, .blog-grid, .japan-grid, .content-platforms, .resources-grid, .about-skills').forEach(grid => {
+    document.querySelectorAll('.projects-grid, .blog-grid, .moments-grid, .japan-grid, .content-platforms, .resources-grid, .about-skills').forEach(grid => {
       grid.querySelectorAll('.reveal').forEach((child, i) => {
         child.dataset.delay = i;
         child.style.transitionDelay = (i * 0.08) + 's';

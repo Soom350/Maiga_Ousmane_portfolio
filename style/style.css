@@ -501,6 +501,23 @@
       line-height: 1.6;
     }
 
+    .timeline-photo {
+      margin-top: 14px;
+      position: relative;
+      max-width: 360px;
+    }
+    .timeline-photo img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--border);
+      clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+      transition: transform 0.3s ease;
+    }
+    .timeline-photo img:hover {
+      transform: scale(1.02);
+    }
+
     /* PROJECTS */
     #projects {
       background: var(--black);
@@ -603,18 +620,43 @@
     }
 
     .blog-card {
+      --pad-y: 36px;
+      --pad-x: 36px;
       background: var(--card);
-      padding: 36px;
+      padding: var(--pad-y) var(--pad-x);
       border: 1px solid var(--border);
       display: flex;
       flex-direction: column;
       gap: 12px;
       cursor: none;
       transition: border-color 0.25s, transform 0.25s;
+      overflow: hidden;
     }
     .blog-card:hover {
       border-color: rgba(240,192,64,0.3);
       transform: translateY(-3px);
+    }
+
+    /* Blog cover image (full-bleed at the top of the card) */
+    .blog-cover {
+      margin: calc(-1 * var(--pad-y)) calc(-1 * var(--pad-x)) 8px;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border);
+    }
+    .blog-cover img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 45%;
+      transition: transform 0.5s ease;
+    }
+    .blog-card:hover .blog-cover img {
+      transform: scale(1.05);
+    }
+    .blog-card.featured .blog-cover {
+      aspect-ratio: 2 / 1;
     }
 
     .blog-cat {
@@ -649,6 +691,73 @@
       border-top: 1px solid var(--border);
       padding-top: 16px;
       margin-top: auto;
+    }
+
+    /* MOMENTS */
+    #moments {
+      background: var(--black);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .moments-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .moment-card {
+      position: relative;
+      margin: 0;
+      background: var(--card);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .moment-card:hover {
+      border-color: rgba(240,192,64,0.35);
+      transform: translateY(-4px);
+    }
+
+    .moment-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .moment-card:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Cadrage individuel pour garder le sujet visible dans chaque photo */
+    .moments-grid .moment-card:nth-child(1) img { object-position: 70% center; }
+    .moments-grid .moment-card:nth-child(2) img { object-position: 60% center; }
+    .moments-grid .moment-card:nth-child(3) img { object-position: 60% center; }
+    .moments-grid .moment-card:nth-child(4) img { object-position: center 55%; }
+
+    .moment-card figcaption {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      padding: 40px 16px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      background: linear-gradient(180deg, transparent 0%, rgba(10,10,10,0.85) 70%);
+    }
+
+    .moment-caption {
+      font-size: 0.85rem;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .moment-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
     }
 
     /* JAPAN LIFE */
@@ -986,6 +1095,10 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
+      .moments-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
       .content-platforms {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -1107,6 +1220,7 @@
       .projects-grid,
       .blog-grid,
       .japan-grid,
+      .moments-grid,
       .content-platforms,
       .resources-grid {
         grid-template-columns: 1fr;
@@ -1130,10 +1244,22 @@
       }
 
       .project-card,
-      .blog-card,
       .japan-card,
       .platform-card {
         padding: 28px 24px;
+      }
+
+      .blog-card {
+        --pad-y: 28px;
+        --pad-x: 24px;
+      }
+
+      .blog-card.featured .blog-cover {
+        aspect-ratio: 16 / 9;
+      }
+
+      .timeline-photo {
+        max-width: 100%;
       }
 
       #contact {
